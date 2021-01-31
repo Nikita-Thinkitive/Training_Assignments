@@ -1,0 +1,5 @@
+Name :Nikita
+City: Pune
+Mobile:998877
+Company:Thinkitive
+Designation:Trainee Software Engineer
