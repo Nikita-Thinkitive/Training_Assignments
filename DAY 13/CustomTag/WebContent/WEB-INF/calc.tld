@@ -1,0 +1,22 @@
+<taglib>
+
+ <tlib-version>1.0</tlib-version>
+ <jsp-version>2.0</jsp-version>
+
+	<tag>
+		<name>hello</name>
+		<tag-class>com.thinkitive.thinkitive.MVC_Calculator</tag-class>
+		
+		<attribute>
+			<name>message</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>num1</name>
+		</attribute>
+		<attribute>
+			<name>num2</name>
+		</attribute>
+		
+	</tag>
+</taglib>
