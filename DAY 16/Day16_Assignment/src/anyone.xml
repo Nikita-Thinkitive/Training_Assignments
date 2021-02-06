@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is Schema Defination of bean -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.thinkitive.Employee" autowire="byType">
+	<property name="empid" value="2"></property>
+	<property name="ename" value="nikita"></property>
+	<property name="base_salary" value="5000"></property>
+	<property name="pt" value="200"></property>
+	<property name="medical" value="400"></property>
+	
+	
+	</bean>
+	
+	
+	
+	
+	<!-- ACCESSING METHOD OF ANOTHER CLASS USING ADDRESS CLASS -->
+	
+	
+	
+	
+	
+	
+	
+	
+</beans>
+

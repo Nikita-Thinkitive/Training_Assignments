@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is Schema Defination of bean -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.thinkitive.Employee" autowire="byName">
+	<property name="eid" value="2"></property>
+	<property name="name" value="nikita"></property>
+	<property name="sub">
+	<list>
+	<value>Java</value>
+	<value>Hibernate</value>
+	<value>Spring</value>
+	<value>Spring</value>
+	<value>Jdbc</value>
+	</list>
+	</property>
+	
+	</bean>
+	
+	
+	<bean id="hi" class="com.thinkitive.spring.EmployeeFactory"></bean>
+	
+	<!-- ACCESSING METHOD OF ANOTHER CLASS USING ADDRESS CLASS -->
+	
+	
+	
+	<bean id="add2" factory-bean="hi" factory-method="getInstance"></bean>
+	
+	
+	
+	
+</beans>
+

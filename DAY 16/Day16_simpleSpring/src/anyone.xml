@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is Schema Defination of bean -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.thinkitive.spring.Employee" scope="prototype">
+	<property name="eid" value="2"></property>
+	<property name="name" value="nikita"></property>
+	<property name="sub">
+	<set>
+	<value>Java</value>
+	<value>Hibernate</value>
+	<value>Spring</value>
+	<value>Spring</value>
+	<value>Jdbc</value>
+	</set>
+	</property>
+	
+	</bean>
+	
+	<bean id="emp1" class="com.thinkitive.spring.Employee" scope="prototype">
+	<property name="eid" value="2"></property>
+	<property name="name" value="nikita"></property>
+	<property name="skills">
+	<list>
+	<value>Java</value>
+	<value>Hibernate</value>
+	<value>Spring</value>
+	</list>
+	</property>
+	</bean>
+	
+	<bean id="add" class="com.thinkitive.spring.Address" >
+	<constructor-arg name="pincode" value="411062"></constructor-arg>
+	<constructor-arg name="city" value="pune"></constructor-arg>
+	<property name="district">
+	<map>
+	<entry key ="1" value="Pune"></entry>
+	<entry key ="2" value="Pimpri-chinchwad"></entry>
+	
+	</map>
+	</property>
+	</bean>
+
+
+	<bean id="emp2" class="com.thinkitive.spring.Employee" factory-method="getFactory">
+	<property name="eid" value="2"></property>
+	<property name="name" value="nikita"></property>
+	<property name="skills">
+	<list>
+	<value>Java</value>
+	<value>Hibernate</value>
+	<value>Spring</value>
+	</list>
+	</property>
+	
+	</bean>
+	
+	
+	
+	
+	
+	<bean id="hi" class="com.thinkitive.spring.EmployeeFactory"></bean>
+	
+	<!-- ACCESSING METHOD OF ANOTHER CLASS USING ADDRESS CLASS -->
+	
+	
+	
+	<bean id="add2" factory-bean="hi" factory-method="getInstance"></bean>
+	
+	
+	
+	
+</beans>
+
