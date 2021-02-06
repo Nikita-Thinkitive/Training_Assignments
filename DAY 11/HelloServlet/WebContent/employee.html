@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+<title>index</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+	<div class="container ">
+	<center>
+	<br/><br/>
+	 <div class="box" style="background-color:  lightcoral; width: 550px; height:670px; box-shadow: 5px 5px lightseagreen;border-radius: 15px;">
+	 <br/>
+		<h2>EMPLOYEE DATA</h2>
+		<form action ="DbServlet" method="Post">
+		<div class="form-group">
+				<label for="exampleInputEmail1">ID No</label>
+				 <input
+					type="number" class="form-control" 
+					 placeholder="Enter Number" name="empid"style="width: 400px; height: 50px; color:black;"> 
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1">NAME</label>
+				 <input
+					type="text" class="form-control" 
+					aria-describedby="emailHelp" placeholder="Enter Name" name="name" style="width: 400px; height: 50px; color:black;"> 
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputEmail1">Salary</label>
+				 <input
+					type="number" class="form-control" 
+					aria-describedby="emailHelp" placeholder="Enter salary" name="salary" style="width: 400px; height: 50px; color:black;"> 
+			</div>
+			
+			<button type="submit" class="btn btn-primary" >Insert</button>
+			
+			
+			<div class="form-group">
+				<label for="exampleInputEmail1">ID No</label>
+				 <input
+					type="number" class="form-control" 
+					 placeholder="Enter Number" name="empid1" style="width: 400px; height: 50px; color:black;"> 
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1">NAME</label>
+				 <input
+					type="text" class="form-control" 
+					aria-describedby="emailHelp" placeholder="Enter Name" name="name1" style="width: 400px; height: 50px; color:black;"> 
+			</div>
+			
+			
+			
+			<button type="submit" class="btn btn-primary" >Delete</button>
+		</form>
+
+
+	</div>
+
+
+</center></div>
+
+
+</body>
+
+</html>
